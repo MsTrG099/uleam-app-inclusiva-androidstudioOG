@@ -1,0 +1,26 @@
+# Archivos locales del IDE
+*.iml
+.gradle
+/local.properties
+/.idea/*
+!.idea/runConfigurations
+
+# Excluir archivos específicos que Android Studio regenera
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Mac
+.DS_Store
+
+# Builds
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Tu archivo pesado
+model.onnx

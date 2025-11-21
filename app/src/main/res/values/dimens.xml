@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/dimens.xml -->
+<resources>
+    <!-- Padding y Margins -->
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+
+    <!-- Border Radius -->
+    <dimen name="border_radius_small">8dp</dimen>
+    <dimen name="border_radius_medium">12dp</dimen>
+    <dimen name="border_radius_large">16dp</dimen>
+
+    <!-- Elevations -->
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_very_high">12dp</dimen>
+
+    <!-- Tamaños de Texto -->
+    <dimen name="text_size_very_small">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_very_large">24sp</dimen>
+
+    <!-- Tamaños de Botones -->
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_icon_size">40dp</dimen>
+    <dimen name="microphone_button_size">140dp</dimen>
+
+    <!-- Iconos -->
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_very_large">48dp</dimen>
+
+    <!-- Separadores -->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Bottom Navigation -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+</resources>

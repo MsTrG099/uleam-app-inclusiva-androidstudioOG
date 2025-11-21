@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_button_microphone_recording.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Gradient rojo (estado grabando) -->
+    <gradient
+        android:startColor="#e53935"
+        android:endColor="#c62828"
+        android:angle="270"
+        android:type="linear" />
+
+</shape>

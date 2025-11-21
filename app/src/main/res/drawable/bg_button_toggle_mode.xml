@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_button_toggle_mode.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Fondo semi-transparente blanco -->
+    <solid android:color="#60FFFFFF" />
+
+    <!-- Borde blanco -->
+    <stroke
+        android:width="1dp"
+        android:color="#FFFFFF" />
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="16dp" />
+
+</shape>

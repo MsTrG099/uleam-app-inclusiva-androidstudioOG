@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Base de la App -->
+    <style name="Base.Theme.UleamInclusiva" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Colores Principales -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Fondo de la app -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Colores de texto por defecto -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+    </style>
+
+    <style name="Theme.UleamInclusiva" parent="Base.Theme.UleamInclusiva" />
+
+    <!-- ============================================= -->
+    <!-- ESTILOS BASE (compatibilidad con layouts antiguos) -->
+    <!-- ============================================= -->
+
+    <!-- Estilo Button base -->
+    <style name="Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Estilo TextAppearance base -->
+    <style name="TextAppearance" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <!-- TextAppearance.Title base -->
+    <style name="TextAppearance.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================= -->
+    <!-- ESTILOS DE TEXTO EXTENDIDOS -->
+    <!-- ============================================= -->
+
+    <!-- Títulos -->
+    <style name="TextAppearance.Title.Large">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Title.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Title.Small">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Texto Normal -->
+    <style name="TextAppearance.Body">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="TextAppearance.Body.Secondary">
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Caption.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textTertiary</item>
+    </style>
+
+    <!-- ============================================= -->
+    <!-- ESTILOS DE BOTONES -->
+    <!-- ============================================= -->
+
+    <!-- Botón Primario -->
+    <style name="Button.Primary">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Botón Secundario -->
+    <style name="Button.Secondary">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+
+    <!-- Botón de Micrófono Gigante -->
+    <style name="Button.Microphone">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:background">@drawable/bg_button_microphone</item>
+        <item name="android:elevation">12dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- ============================================= -->
+    <!-- ESTILOS DE CARDS -->
+    <!-- ============================================= -->
+
+    <style name="Card">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Card.Clickable">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- ============================================= -->
+    <!-- ESTILOS DE HEADERS -->
+    <!-- ============================================= -->
+
+    <style name="Header">
+        <item name="android:background">@drawable/bg_gradient_header</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="Header.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

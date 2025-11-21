@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_button_microphone.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Gradient azul (estado normal) -->
+    <gradient
+        android:startColor="#1e88e5"
+        android:endColor="#1565c0"
+        android:angle="270"
+        android:type="linear" />
+
+</shape>

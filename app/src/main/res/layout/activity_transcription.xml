@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <!-- Header con gradiente -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        style="@style/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Fila superior: Botón volver + Título + Configuración -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver"
+                android:tint="@color/textWhite"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎤 Transcripción"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/textWhite"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_manage"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Configuración"
+                android:tint="@color/textWhite"/>
+        </LinearLayout>
+
+        <!-- Fila de estado: Modo + Estado + Botón cambiar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Badge del Modo -->
+            <TextView
+                android:id="@+id/tvModeIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌐 Online"
+                android:textSize="14sp"
+                android:textColor="@color/textWhite"
+                android:textStyle="bold"
+                android:background="@drawable/bg_badge_mode"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Badge del Estado -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● Listo"
+                android:textSize="14sp"
+                android:textColor="@color/textWhite"
+                android:background="@drawable/bg_badge_status"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Botón Cambiar Modo -->
+            <Button
+                android:id="@+id/btnToggleMode"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="⇄ Cambiar"
+                android:textSize="12sp"
+                android:textColor="@color/textWhite"
+                android:background="@drawable/bg_button_toggle_mode"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón circular de micrófono -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnRecord"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <FrameLayout
+            android:id="@+id/microphoneBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_microphone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎤"
+                    android:textSize="48sp"/>
+
+                <TextView
+                    android:id="@+id/tvRecordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grabar"
+                    android:textSize="16sp"
+                    android:textColor="@color/textWhite"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Área de transcripción -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_transcription_area"
+        android:elevation="2dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRecord"
+        app:layout_constraintBottom_toTopOf="@id/btnActionsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/textPrimary"
+            android:lineSpacingMultiplier="1.4"
+            android:hint="El texto aparecerá aquí..."
+            android:textColorHint="@color/textTertiary"
+            android:padding="20dp"/>
+    </ScrollView>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:id="@+id/btnActionsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="🗑️ Limpiar"
+            android:textSize="14sp"
+            android:backgroundTint="@color/textTertiary"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

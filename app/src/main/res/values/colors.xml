@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores Principales -->
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#1565c0</color>
+    <color name="colorPrimaryLight">#e3f2fd</color>
+    <color name="colorAccent">#1e88e5</color>
+
+    <!-- Colores de Estado -->
+    <color name="colorError">#e53935</color>
+    <color name="colorErrorDark">#c62828</color>
+    <color name="colorWarning">#ff9800</color>
+    <color name="colorWarningDark">#f57c00</color>
+    <color name="colorSuccess">#4caf50</color>
+
+    <!-- Fondos -->
+    <color name="backgroundColor">#f5f5f5</color>
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="backgroundLightBlue">#e3f2fd</color>
+
+    <!-- Texto -->
+    <color name="textPrimary">#333333</color>
+    <color name="textSecondary">#666666</color>
+    <color name="textTertiary">#999999</color>
+    <color name="textWhite">#ffffff</color>
+
+    <!-- Dividers y Borders -->
+    <color name="dividerColor">#e0e0e0</color>
+    <color name="borderColor">#d3d3d3</color>
+
+    <!-- Sombras -->
+    <color name="shadowColor">#40000000</color>
+
+    <!-- Transparencias -->
+    <color name="transparent">#00000000</color>
+    <color name="semiTransparentBlack">#80000000</color>
+
+    <!-- Colores para Modo Oscuro -->
+    <color name="backgroundDarkMode">#121212</color>
+    <color name="textLightGray">#b0b0b0</color>
+</resources>

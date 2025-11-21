@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_card.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Fondo blanco -->
+    <solid android:color="@color/backgroundWhite" />
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="12dp" />
+
+</shape>

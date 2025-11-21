@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema para Modo Oscuro -->
+    <style name="Base.Theme.UleamInclusiva" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Colores Principales (mantener los azules) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Fondo oscuro -->
+        <item name="android:windowBackground">@color/backgroundDarkMode</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Colores de texto (claros en modo oscuro) -->
+        <item name="android:textColorPrimary">@color/textWhite</item>
+        <item name="android:textColorSecondary">@color/textLightGray</item>
+    </style>
+
+    <style name="Theme.UleamInclusiva" parent="Base.Theme.UleamInclusiva" />
+</resources>
